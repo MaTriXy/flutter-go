@@ -1,11 +1,9 @@
-/**
- * Created with Android Studio.
- * User: 三帆
- * Date: 20/01/2019
- * Time: 22:28
- * email: sanfan.hx@alibaba-inc.com
- * tartget:  CupertinoTabBar
- */
+/// Created with Android Studio.
+/// User: 三帆
+/// Date: 20/01/2019
+/// Time: 22:28
+/// email: sanfan.hx@alibaba-inc.com
+/// target:  CupertinoTabBar
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -22,12 +20,14 @@ class _Demo extends State<CupertinoTabScaffoldDemo> {
       index = _index;
     });
   }
+
+  @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 500,
       child: CupertinoTabScaffold(
         tabBar: CupertinoTabBar(
-          items: <BottomNavigationBarItem> [
+          items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               title: Text("1"),
               icon: Icon(Icons.add),
@@ -59,7 +59,9 @@ class _Demo extends State<CupertinoTabScaffoldDemo> {
                               child: Center(
                                 child: CupertinoButton(
                                   child: const Text('Back'),
-                                  onPressed: () { Navigator.of(context).pop(); },
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
                                 ),
                               ),
                             );

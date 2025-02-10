@@ -1,13 +1,13 @@
-/**
- * Created with Android Studio.
- * User: 三帆
- * Date: 07/01/2019
- * Time: 10:26
- * email: sanfan.hx@alibaba-inc.com
- * tartget:  xxx
- */
-import 'package:flutter_go/components/widget_demo.dart';
+/// Created with Android Studio.
+/// User: 三帆
+/// Date: 07/01/2019
+/// Time: 10:26
+/// email: sanfan.hx@alibaba-inc.com
+/// target:  xxx
+
 import 'package:flutter/material.dart';
+
+import 'package:flutter_go/components/widget_demo.dart';
 import 'demo.dart';
 
 const String _Text0 = """
@@ -22,7 +22,6 @@ const String _Text0 = """
 - 当需要给用户提供多个选项的供选择时，请使用SimpleDialog
 """;
 
-
 class Demo extends StatefulWidget {
   static const String routeName = '/components/Dialog/AlertDialog';
 
@@ -36,10 +35,7 @@ class _DemoState extends State<Demo> {
     return WidgetDemo(
       title: 'AlertDialog',
       codeUrl: 'components/Dialog/AlertDialog/demo.dart',
-      contentList: [
-        _Text0,
-        AlertDialogDemo()
-      ],
+      contentList: [_Text0, AlertDialogDemo()],
       docUrl: 'https://docs.flutter.io/flutter/material/AlertDialog-class.html',
     );
   }

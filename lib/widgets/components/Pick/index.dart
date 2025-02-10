@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
-import '../../../model/widget.dart';
 
+import '../../../model/widget.dart';
 import 'YearPicker/index.dart' as YearPicker;
 import 'DayPicker/index.dart' as DayPicker;
 import 'MonthPicker/index.dart' as MonthPicker;
@@ -33,5 +33,4 @@ List<WidgetPoint> widgetPoints = [
     routerName: CityPicker.Demo.routeName,
     buildRouter: (BuildContext context) => CityPicker.Demo(),
   ),
-
 ];

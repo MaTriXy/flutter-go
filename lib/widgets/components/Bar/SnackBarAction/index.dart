@@ -1,13 +1,13 @@
-/**
- * Created with Android Studio.
- * User: sanfan.hx
- * Date: 2019/1/6
- * Time: 下午17:08
- * email: sanfan.hx@alibaba-inc.com
- * tartget: SnackBarAction 的示例
- */
-import 'package:flutter_go/components/widget_demo.dart';
+/// Created with Android Studio.
+/// User: sanfan.hx
+/// Date: 2019/1/6
+/// Time: 下午17:08
+/// email: sanfan.hx@alibaba-inc.com
+/// target: SnackBarAction 的示例
+
 import 'package:flutter/material.dart';
+
+import 'package:flutter_go/components/widget_demo.dart';
 import './demo.dart' as SnackBarDemo;
 
 const String _Text0 = """
@@ -21,7 +21,6 @@ const String _Text0 = """
 > 为SnackBar加入action[SnackBarAction]显示按区, 默认下是隐藏的
 
 """;
-
 
 class Demo extends StatefulWidget {
   static const String routeName = '/components/Bar/SnackBarAction';
@@ -40,7 +39,8 @@ class _DemoState extends State<Demo> {
         _Text0,
         SnackBarDemo.SnackBarActionDemo(),
       ],
-      docUrl: 'https://docs.flutter.io/flutter/material/SnackBarAction-class.html',
+      docUrl:
+          'https://docs.flutter.io/flutter/material/SnackBarAction-class.html',
     );
   }
 }

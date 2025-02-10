@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_go/components/widget_demo.dart';
 import 'package:flutter_go/widgets/elements/Form/Text/RichText/demo.dart';
+
 const String intro = """
 ### **简介**
 
@@ -17,22 +18,21 @@ const String intro = """
 
 """;
 
-
 class Demo extends StatefulWidget {
   static const String routeName = '/element/Form/Text/RichText';
   _Demo createState() => _Demo();
 }
 
 class _Demo extends State<Demo> {
-
+  @override
   Widget build(BuildContext context) {
     return WidgetDemo(
-      title: 'Rich Text',
-      docUrl: 'https://docs.flutter.io/flutter/widgets/RichText-class.html',
-      codeUrl: 'elements/Form/Text/RichText/index.dart',
-      contentList: [
-        intro,
-        RichTextDemo(),
-      ]);
+        title: 'Rich Text',
+        docUrl: 'https://docs.flutter.io/flutter/widgets/RichText-class.html',
+        codeUrl: 'elements/Form/Text/RichText/demo.dart',
+        contentList: [
+          intro,
+          RichTextDemo(),
+        ]);
   }
 }

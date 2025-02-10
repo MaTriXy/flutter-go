@@ -1,12 +1,12 @@
-/**
- * Created with Android Studio.
- * User: 一晟
- * Date: 2019/1/20
- * Time: 下午10:57
- * email: zhu.yan@alibaba-inc.com
- * tartget: CupertinoPageRoute 的示例
- */
+/// Created with Android Studio.
+/// User: 一晟
+/// Date: 2019/1/20
+/// Time: 下午10:57
+/// email: zhu.yan@alibaba-inc.com
+/// target: CupertinoPageRoute 的示例
+
 import 'package:flutter/material.dart';
+
 import 'package:flutter_go/components/widget_demo.dart';
 import './demo.dart' as demoBox;
 
@@ -37,10 +37,11 @@ class _DemoState extends State<Demo> {
         content0,
         content1,
         demoBox.CupertinoPageRouteFullDefault(),
-        SizedBox(height:50)
+        SizedBox(height: 50)
       ],
       title: 'CupertinoPageRoute',
-      docUrl: 'https://docs.flutter.io/flutter/cupertino/CupertinoPageRoute-class.html',
+      docUrl:
+          'https://docs.flutter.io/flutter/cupertino/CupertinoPageRoute-class.html',
       codeUrl: 'themes/Cupertino/CupertinoPageRoute/demo.dart',
     );
   }

@@ -1,21 +1,19 @@
-/**
- * Created with Android Studio.
- * User: 三帆
- * Date: 15/01/2019
- * Time: 22:23
- * email: sanfan.hx@alibaba-inc.com
- * tartget:  xxx
- */
+/// Created with Android Studio.
+/// User: 三帆
+/// Date: 15/01/2019
+/// Time: 22:23
+/// email: sanfan.hx@alibaba-inc.com
+/// target:  xxx
 
-//import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 class CupertinoScrollbarDemo extends StatefulWidget {
   _Demo createState() => _Demo();
 }
 
 class _Demo extends State<CupertinoScrollbarDemo> {
-
+  @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
@@ -24,7 +22,8 @@ class _Demo extends State<CupertinoScrollbarDemo> {
                 height: 300,
                 child: ListView.custom(
                   scrollDirection: Axis.vertical,
-                  childrenDelegate:SliverChildBuilderDelegate((BuildContext context, int index) {
+                  childrenDelegate: SliverChildBuilderDelegate(
+                      (BuildContext context, int index) {
                     return Container(
                       height: 50.0,
                       alignment: Alignment.center,
@@ -32,9 +31,7 @@ class _Demo extends State<CupertinoScrollbarDemo> {
                       child: Text('list item $index'),
                     );
                   }, childCount: 10),
-                )
-            )
-        ),
+                ))),
         Center(
           child: Text("CupertinoScrollbar效果"),
         )
@@ -43,13 +40,12 @@ class _Demo extends State<CupertinoScrollbarDemo> {
   }
 }
 
-
 class NoCupertinoScrollbarDemo extends StatefulWidget {
   _NoCupertinoScrollbarDemo createState() => _NoCupertinoScrollbarDemo();
 }
 
 class _NoCupertinoScrollbarDemo extends State<NoCupertinoScrollbarDemo> {
-
+  @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
@@ -57,7 +53,8 @@ class _NoCupertinoScrollbarDemo extends State<NoCupertinoScrollbarDemo> {
             height: 300,
             child: ListView.custom(
               scrollDirection: Axis.vertical,
-              childrenDelegate:SliverChildBuilderDelegate((BuildContext context, int index) {
+              childrenDelegate:
+                  SliverChildBuilderDelegate((BuildContext context, int index) {
                 return Container(
                   height: 50.0,
                   alignment: Alignment.center,
@@ -65,8 +62,7 @@ class _NoCupertinoScrollbarDemo extends State<NoCupertinoScrollbarDemo> {
                   child: Text('list item $index'),
                 );
               }, childCount: 10),
-            )
-        ),
+            )),
         Center(
           child: Text("无CupertinoScrollbar效果"),
         )

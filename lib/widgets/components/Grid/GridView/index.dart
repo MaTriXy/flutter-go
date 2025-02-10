@@ -1,13 +1,13 @@
-/**
- * Created with Android Studio.
- * User: 三帆
- * Date: 07/01/2019
- * Time: 10:26
- * email: sanfan.hx@alibaba-inc.com
- * tartget:  xxx
- */
-import 'package:flutter_go/components/widget_demo.dart';
+/// Created with Android Studio.
+/// User: 三帆
+/// Date: 07/01/2019
+/// Time: 10:26
+/// email: sanfan.hx@alibaba-inc.com
+/// target:  xxx
+
 import 'package:flutter/material.dart';
+
+import 'package:flutter_go/components/widget_demo.dart';
 import 'demo.dart';
 
 const String _Text0 = """
@@ -49,7 +49,12 @@ const String _Text0 = """
 - GridView.extent
 """;
 
+const Text1 = """ 
+### 
+> SliverGridDelegateWithFixedCrossAxisCount
 
+gridDelegate: SliverGridDelegateWithFixedCrossAxisCount,实现网格
+""";
 
 class Demo extends StatefulWidget {
   static const String routeName = '/components/Grid/GridView';
@@ -68,8 +73,10 @@ class _DemoState extends State<Demo> {
         _Text0,
         GridTileDemo(),
         SizedBox(
-          height: 100.0,
-        )
+          height: 10.0,
+        ),
+        Text1,
+        GridViewDemo(),
       ],
       docUrl: 'https://docs.flutter.io/flutter/material/GridView-class.html',
     );

@@ -1,10 +1,10 @@
-/*
- * @Author: 一凨 
- * @Date: 2018-12-20 13:21:36 
- * @Last Modified by: 一凨
- * @Last Modified time: 2018-12-20 14:08:29
- */
+/// @Author: 一凨
+/// @Date: 2018-12-20 13:21:36
+/// @Last Modified by: 一凨
+/// @Last Modified time: 2018-12-20 14:08:29
+
 import 'package:flutter/material.dart';
+
 import 'package:flutter_go/components/widget_demo.dart';
 import './demo.dart';
 
@@ -29,7 +29,6 @@ class Demo extends StatefulWidget {
 }
 
 class _DemoState extends State<Demo> {
-
   @override
   Widget build(BuildContext context) {
     return WidgetDemo(
@@ -39,7 +38,8 @@ class _DemoState extends State<Demo> {
         CustomScrollViewDemo(),
       ],
       codeUrl: 'components/Scroll/CustomScrollView/demo.dart',
-      docUrl: 'https://docs.flutter.io/flutter/widgets/CustomScrollView-class.html',
+      docUrl:
+          'https://docs.flutter.io/flutter/widgets/CustomScrollView-class.html',
       title: 'CustomScrollView',
     );
   }

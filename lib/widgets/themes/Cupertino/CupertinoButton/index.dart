@@ -1,11 +1,10 @@
-/**
- * Created with Android Studio.
- * User: 一晟
- * Date: 2019/1/20
- * Time: 下午10:57
- * email: zhu.yan@alibaba-inc.com
- * tartget: CupertinoButton 的示例
- */
+/// Created with Android Studio.
+/// User: 一晟
+/// Date: 2019/1/20
+/// Time: 下午10:57
+/// email: zhu.yan@alibaba-inc.com
+/// target: CupertinoButton 的示例
+
 import 'package:flutter/material.dart';
 import 'package:flutter_go/components/widget_demo.dart';
 import './demo.dart' as demoBox;
@@ -32,13 +31,10 @@ class _DemoState extends State<Demo> {
   @override
   Widget build(BuildContext context) {
     return WidgetDemo(
-      contentList: [
-        content0,
-        content1,
-        demoBox.CupertinoButtonFullDefault()
-      ],
+      contentList: [content0, content1, demoBox.CupertinoButtonFullDefault()],
       title: 'CupertinoButton',
-      docUrl: 'https://docs.flutter.io/flutter/cupertino/CupertinoButton-class.html',
+      docUrl:
+          'https://docs.flutter.io/flutter/cupertino/CupertinoButton-class.html',
       codeUrl: 'themes/Cupertino/CupertinoButton/demo.dart',
     );
   }

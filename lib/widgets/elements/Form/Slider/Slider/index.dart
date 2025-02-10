@@ -1,15 +1,14 @@
-/**
- * Created with Android Studio.
- * User: 三帆
- * Date: 20/12/2018
- * Time: 17:43
- * email: sanfan.hx@alibaba-inc.com
- * tartget:  xxx
- */
+/// Created with Android Studio.
+/// User: 三帆
+/// Date: 20/12/2018
+/// Time: 17:43
+/// email: sanfan.hx@alibaba-inc.com
+/// target:  xxx
 
 import 'package:flutter/material.dart';
+
 import 'package:flutter_go/components/widget_demo.dart';
-import  'demo.dart';
+import 'demo.dart';
 
 const contentA = '''
 ### **简介**
@@ -41,7 +40,6 @@ slider 用来选择连续性的或者非连续性的数据. 默认是在一段�
 
 ''';
 
-
 const contentB = '''
 ### **高级用法**
 > 自定义Slider 样式
@@ -71,22 +69,17 @@ const contentB = '''
 ''';
 
 class Demo extends StatefulWidget {
-  static const String routeName = 'elements/Form/Slider/Slider';
+  static const String routeName = 'element/form/Slider/Slider';
   _Demo createState() => _Demo();
 }
 
 class _Demo extends State<Demo> {
-
+  @override
   Widget build(BuildContext context) {
     return WidgetDemo(
       title: 'Slider',
       codeUrl: 'elements/Form/Slider/Slider/demo.dart',
-      contentList: [
-        contentA,
-        SliderDemo(),
-        contentB,
-        SliderThemeDemo()
-      ],
+      contentList: [contentA, SliderDemo(), contentB, SliderThemeDemo()],
       docUrl: 'https://docs.flutter.io/flutter/material/Slider-class.html',
     );
   }

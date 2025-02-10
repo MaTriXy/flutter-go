@@ -1,21 +1,10 @@
-/**
- * Created with Android Studio.
- * User: 一晟
- * Date: 2018/12/31
- * Time: 下午10:15
- * email: zhu.yan@alibaba-inc.com
- * tartget: FlatButton 的示例
- */
-/// Keeps a Dart List in sync with an AnimatedList.
-///
-/// The [insert] and [removeAt] methods apply to both the internal list and the
-/// animated list that belongs to [listKey].
-///
-/// This class only exposes as much of the Dart List API as is needed by the
-/// sample app. More list methods are easily added, however methods that mutate the
-/// list must make the same changes to the animated list in terms of
-/// [AnimatedListState.insertItem] and [AnimatedList.removeItem].
-///
+/// Created with Android Studio.
+/// User: 一晟
+/// Date: 2018/12/31
+/// Time: 下午10:15
+/// email: zhu.yan@alibaba-inc.com
+/// target: model 的示例
+
 import 'package:flutter/material.dart';
 
 class ListModel<E> {
@@ -23,9 +12,9 @@ class ListModel<E> {
     @required this.listKey,
     @required this.removedItemBuilder,
     Iterable<E> initialItems,
-  }) : assert(listKey != null),
+  })  : assert(listKey != null),
         assert(removedItemBuilder != null),
-        _items =  List<E>.from(initialItems ?? <E>[]);
+        _items = List<E>.from(initialItems ?? <E>[]);
 
   final GlobalKey<AnimatedListState> listKey;
   final dynamic removedItemBuilder;
@@ -41,7 +30,8 @@ class ListModel<E> {
   E removeAt(int index) {
     final E removedItem = _items.removeAt(index);
     if (removedItem != null) {
-      _animatedList.removeItem(index, (BuildContext context, Animation<double> animation) {
+      _animatedList.removeItem(index,
+          (BuildContext context, Animation<double> animation) {
         return removedItemBuilder(removedItem, context, animation);
       });
     }

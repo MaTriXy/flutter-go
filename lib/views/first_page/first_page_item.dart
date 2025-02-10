@@ -1,11 +1,9 @@
-/**
- * Created with Android Studio.
- * User: 一晟
- * Date: 2019/1/5
- * Time: 下午10:20
- * email: zhu.yan@alibaba-inc.com
- * tartget: FirstPageItem
- */
+/// Created with Android Studio.
+/// User: 一晟
+/// Date: 2019/1/5
+/// Time: 下午10:20
+/// email: zhu.yan@alibaba-inc.com
+/// target: FirstPageItem
 
 import 'package:flutter_go/utils/util.dart';
 
@@ -22,18 +20,18 @@ class FirstPageItem {
 
   FirstPageItem(
       {this.hot,
-        this.tag,
-        this.username,
-        this.collectionCount,
-        this.createdTime,
-        this.commentCount,
-        this.title,
-        this.detailUrl,
-        this.isCollection});
+      this.tag,
+      this.username,
+      this.collectionCount,
+      this.createdTime,
+      this.commentCount,
+      this.title,
+      this.detailUrl,
+      this.isCollection});
 
   factory FirstPageItem.fromJson(Map<String, dynamic> json) {
     String _tag = '';
-    if(json['tags'].length>0){
+    if (json['tags'].length > 0) {
       _tag = '${json['tags'][0]['title']}/';
     }
     return FirstPageItem(
@@ -45,7 +43,7 @@ class FirstPageItem {
       createdTime: Util.getTimeDuration(json['createdAt']),
       title: json['title'],
       detailUrl: json['originalUrl'],
-      isCollection: json['type'] ,
+      isCollection: json['type'],
     );
   }
 }

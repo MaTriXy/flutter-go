@@ -1,11 +1,10 @@
-/*
- * @Author: xiaojia.dxj
- * @Date: 2018-12-20 13:32:15 
- * @Last Modified by: xiaojia.dxj
- * @Last Modified time: 2018-12-21 10:42:05
- */
+/// @Author: xiaojia.dxj
+/// @Date: 2018-12-20 13:32:15
+/// @Last Modified by: xiaojia.dxj
+/// @Last Modified time: 2018-12-21 10:42:05
 
 import 'package:flutter/material.dart';
+
 import 'package:flutter_go/components/widget_demo.dart';
 import 'demo.dart';
 
@@ -37,7 +36,7 @@ class _DemoState extends State<Demo> {
           FilterChipDemo(),
         ],
         codeUrl: 'components/Chip/FilterChip/demo.dart',
-        docUrl:'https://docs.flutter.io/flutter/material/InputChip-class.html',
+        docUrl: 'https://docs.flutter.io/flutter/material/InputChip-class.html',
         title: 'InputChip');
   }
 }

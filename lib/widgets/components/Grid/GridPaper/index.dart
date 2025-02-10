@@ -1,13 +1,13 @@
-/**
- * Created with Android Studio.
- * User: 三帆
- * Date: 07/01/2019
- * Time: 10:26
- * email: sanfan.hx@alibaba-inc.com
- * tartget:  xxx
- */
-import 'package:flutter_go/components/widget_demo.dart';
+/// Created with Android Studio.
+/// User: 三帆
+/// Date: 07/01/2019
+/// Time: 10:26
+/// email: sanfan.hx@alibaba-inc.com
+/// target:  xxx
+
 import 'package:flutter/material.dart';
+
+import 'package:flutter_go/components/widget_demo.dart';
 import 'demo.dart';
 
 const String _Text0 = """
@@ -15,8 +15,6 @@ const String _Text0 = """
 > GridViewPaper是GridView中的item的一种展现形式, 会在上层浮现一层网络.
 
 """;
-
-
 
 class Demo extends StatefulWidget {
   static const String routeName = '/components/Grid/GridPaper';

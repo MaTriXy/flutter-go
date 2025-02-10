@@ -1,11 +1,3 @@
-/**
- * Created with Android Studio.
- * User: 三帆
- * Date: 15/01/2019
- * Time: 22:23
- * email: sanfan.hx@alibaba-inc.com
- * tartget:  xxx
- */
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -15,11 +7,12 @@ class CupertinoSegmentedControlDemo extends StatefulWidget {
 
 class _Demo extends State<CupertinoSegmentedControlDemo> {
   String value = 'a';
+  @override
   Widget build(BuildContext context) {
-    return  CupertinoSegmentedControl(
+    return CupertinoSegmentedControl(
       onValueChanged: (v) {
         this.setState(() {
-           value = v;
+          value = v;
         });
       },
       pressedColor: Color(0xff7c1c25),
@@ -28,15 +21,10 @@ class _Demo extends State<CupertinoSegmentedControlDemo> {
       groupValue: value,
       children: {
         'a': Container(
-          alignment: Alignment.center,
-          width: 130.0,
-          child: Text('a')
-        ),
+            alignment: Alignment.center, width: 130.0, child: Text('a')),
         'c': Text('C'),
         'b': Text('B'),
       },
     );
   }
-
 }
-

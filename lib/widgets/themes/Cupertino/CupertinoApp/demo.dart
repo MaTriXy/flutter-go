@@ -1,19 +1,14 @@
-/**
- * Created with Android Studio.
- * User: ryan
- * Date: 2019/1/20
- * Time: 上午11:34
- * email: zhu.yan@alibaba-inc.com
- * tartget: CupertinoApp 的示例
- */
+/// Created with Android Studio.
+/// User: 一晟
+/// Date: 2019/1/20
+/// Time: 上午11:34
+/// email: zhu.yan@alibaba-inc.com
+/// target: CupertinoApp 的示例
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-/*
-* Checkbox 默认按钮的实例
-* index 当前checkbox 的索引值
-* */
+// CupertinoApp 的实例
 class CupertinoAppFullDefault extends StatefulWidget {
   const CupertinoAppFullDefault() : super();
 
@@ -21,9 +16,7 @@ class CupertinoAppFullDefault extends StatefulWidget {
   State<StatefulWidget> createState() => _CupertinoAppFullDefault();
 }
 
-/*
-* CupertinoApp 默认的实例,有状态
-* */
+// CupertinoApp 默认的实例,有状态
 class _CupertinoAppFullDefault extends State {
   routerHandler(setting) {
     //setting.isInitialRoute; bool类型 是否初始路由
@@ -40,8 +33,8 @@ class _CupertinoAppFullDefault extends State {
             (___, Animation<double> animation, ____, Widget child) {
           return FadeTransition(
             opacity: animation,
-            child:  ScaleTransition(
-              scale:  Tween<double>(begin: 0.5, end: 1.0).animate(animation),
+            child: ScaleTransition(
+              scale: Tween<double>(begin: 0.5, end: 1.0).animate(animation),
               child: child,
             ),
           );
@@ -102,16 +95,16 @@ class _CupertinoAppFullDefault extends State {
           ],
           onGenerateRoute: (setting) {
             // 当通过Navigation.of(context).pushNamed跳转路由时，在routes查找不到时，会调用该方法
-            routerHandler(setting);
+            return routerHandler(setting);
           },
           onGenerateTitle: (context) {
             // 跟上面的tiitle一样，但含有一个context参数用于做本地化
             return 'Flutter应用';
           },
-          onUnknownRoute: (setting) {
-            // 效果跟onGenerateRoute一样调用顺序为onGenerateRoute ==> onUnknownRoute
-            //RouterHandler(setting);
-          },
+//          onUnknownRoute: (setting) {
+//            // 效果跟onGenerateRoute一样调用顺序为onGenerateRoute ==> onUnknownRoute
+//            //RouterHandler(setting);
+//          },
           routes: {
             // 声明程序中有哪个通过Navigation.of(context).pushNamed跳转的路由参数以键值对的形式传递key:路由名字value:对应的Widget
             '/home': (BuildContext context) => HomePage(),
@@ -151,7 +144,8 @@ class _CupertinoAppFullDefault extends State {
               backgroundColor: CupertinoColors.destructiveRed,
               middle: Text('这里是标题', style: TextStyle(color: Colors.white)),
             ),
-            child: Center(child: Text('这里是内容', style: TextStyle(color: Colors.black))),
+            child: Center(
+                child: Text('这里是内容', style: TextStyle(color: Colors.black))),
             backgroundColor: CupertinoColors.inactiveGray,
           );
         });

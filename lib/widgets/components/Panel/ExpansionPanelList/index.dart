@@ -1,9 +1,7 @@
-/*
- * @Author: xiaojia.dxj
- * @Date: 2018-12-20 20:30:41 
- * @Last Modified by: xiaojia.dxj
- * @Last Modified time: 2019-01-08 16:15:20
- */
+/// @Author: xiaojia.dxj
+/// @Date: 2018-12-20 20:30:41
+/// @Last Modified by: xiaojia.dxj
+/// @Last Modified time: 2019-01-08 16:15:20
 
 import 'package:flutter/material.dart';
 import 'package:flutter_go/components/widget_demo.dart';
@@ -41,7 +39,7 @@ class _DemoState extends State<Demo> {
           ExpansionPanelsDemo(),
         ],
         codeUrl: 'components/Panel/ExpansionPanelList/demo.dart',
-        docUrl:'https://docs.flutter.io/flutter/material/RawChip-class.html',
+        docUrl: 'https://docs.flutter.io/flutter/material/RawChip-class.html',
         title: 'RawChip');
   }
 }

@@ -1,10 +1,10 @@
-/*
- * @Author: xiaojia.dxj
- * @Date: 2018-12-29 15:04:51 
- * @Last Modified by: xiaojia.dxj
- * @Last Modified time: 2018-12-29 15:07:16
- */
+/// @Author: xiaojia.dxj
+/// @Date: 2018-12-29 15:04:51
+/// @Last Modified by: xiaojia.dxj
+/// @Last Modified time: 2018-12-29 15:07:16
+
 import 'package:flutter/material.dart';
+
 import 'package:flutter_go/components/widget_demo.dart';
 import '../PopupMenuDivider/demo.dart';
 
@@ -28,12 +28,9 @@ class _DemoState extends State<Demo> {
   @override
   Widget build(BuildContext context) {
     return WidgetDemo(
-      contentList: [
-        content0,
-        content1,
-        PopupMenuDividerDemo()
-      ],
-      docUrl: "https://docs.flutter.io/flutter/material/PopupMenuItem-class.html",
+      contentList: [content0, content1, PopupMenuDividerDemo()],
+      docUrl:
+          "https://docs.flutter.io/flutter/material/PopupMenuItem-class.html",
       codeUrl: 'components/Menu/PopupMenuDivider/demo.dart',
       title: 'PopupMenuItem',
     );

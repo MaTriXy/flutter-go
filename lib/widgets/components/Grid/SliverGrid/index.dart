@@ -1,13 +1,13 @@
-/**
- * Created with Android Studio.
- * User: 三帆
- * Date: 07/01/2019
- * Time: 10:26
- * email: sanfan.hx@alibaba-inc.com
- * tartget:  xxx
- */
-import 'package:flutter_go/components/widget_demo.dart';
+/// Created with Android Studio.
+/// User: 三帆
+/// Date: 07/01/2019
+/// Time: 10:31
+/// email: sanfan.hx@alibaba-inc.com
+/// target:  xxx
+
 import 'package:flutter/material.dart';
+
+import 'package:flutter_go/components/widget_demo.dart';
 import 'demo.dart';
 
 const String _Text0 = """
@@ -25,8 +25,6 @@ const String _Text0 = """
 当元素滚动到视图之外时，关联的元素子树、状态和渲染对象将被销毁, 进入视觉窗口的元素将以懒加载的形式进行创建。
 
 """;
-
-
 
 class Demo extends StatefulWidget {
   static const String routeName = '/components/Grid/SliverGrid';

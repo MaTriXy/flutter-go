@@ -1,14 +1,14 @@
-/*
- * @Author: 一凨 
- * @Date: 2019-01-14 17:53:54 
- * @Last Modified by: 一凨
- * @Last Modified time: 2019-01-14 17:57:51
- */
+import 'package:fluro/fluro.dart';
+
+/// @Author: 一凨
+/// @Date: 2019-01-14 17:53:54
+/// @Last Modified by: 一凨
+/// @Last Modified time: 2019-01-14 17:57:51
+
 import 'package:flutter/material.dart';
 import '../routers/application.dart';
 import '../routers/routers.dart';
 import 'dart:core';
-
 
 class ListViewItem extends StatelessWidget {
   final String itemUrl;
@@ -17,7 +17,6 @@ class ListViewItem extends StatelessWidget {
 
   const ListViewItem({Key key, this.itemUrl, this.itemTitle, this.data})
       : super(key: key);
-
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +27,11 @@ class ListViewItem extends StatelessWidget {
       child: ListTile(
         onTap: () {
           // _launchURL(itemUrl, context);
-          Application.router.navigateTo(context, '${Routes.webViewPage}?title=${Uri.encodeComponent(itemTitle)}&url=${Uri.encodeComponent(itemUrl)}');
+          Application.router.navigateTo(
+            context,
+            '${Routes.webViewPage}?title=${Uri.encodeComponent(itemTitle)}&url=${Uri.encodeComponent(itemUrl)}',
+            transition: TransitionType.nativeModal,
+          );
         },
         title: Padding(
           child: Text(
